@@ -25,14 +25,16 @@ body {
   width: 40px;
 }
 
-.grid div:hover {
-  background-color: lightgrey;
+@media (hover: hover) {
+  .grid div:hover {
+    background-color: lightgrey;
+  }
+  
+  .grid div .taken:hover {
+    background-color: inherit;
+  }
+  
 }
-
-.grid div .taken:hover {
-  background-color: inherit;
-}
-
 
 h1, h3, .victory {
   background: linear-gradient(45deg, whitesmoke, lightblue, whitesmoke);
