@@ -26,11 +26,11 @@ body {
 }
 
 @media (hover: hover) {
-  .grid div:hover {
+  .grid div {
     background-color: lightgrey;
   }
   
-  .grid div .taken:hover {
+  .grid div .taken {
     background-color: inherit;
   }
   
