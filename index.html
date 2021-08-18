@@ -3,16 +3,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connect 4 Tutorial</title>
-  <link rel="stylesheet" href="styleProto.css">
-  <script src="appProto.js"></script>
+  <title>Connect 4!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
 </head>
 <body>
-  <h1>Connect 4!</h1>
-  <h3>The current player is: Player <span id="current-player" class="player-one">1</span></h3>
+  <h1 id="title">Connect 4!</h1>
+  <h3 id="player-display">
+    The current player is: Player <span id="current-player" class="player-one">1</span>
+  </h3>
   <h3 id="result" class="hide"></h3>
-  
-  <div class="grid">
+  <div id="grid">
     <div class="playable"></div>
     <div class="playable"></div>
     <div class="playable"></div>
@@ -55,14 +56,15 @@
     <div class="playable"></div>
     <div class="playable"></div>
     <div class="playable"></div>
-    <div class="taken"></div>
-    <div class="taken"></div>
-    <div class="taken"></div>
-    <div class="taken"></div>
-    <div class="taken"></div>
-    <div class="taken"></div>
-    <div class="taken"></div>
+    <div class="unavailable bottom"></div>
+    <div class="unavailable bottom"></div>
+    <div class="unavailable bottom"></div>
+    <div class="unavailable bottom"></div>
+    <div class="unavailable bottom"></div>
+    <div class="unavailable bottom"></div>
+    <div class="unavailable bottom"></div>
   </div>
-  
+
+
 </body>
 </html>

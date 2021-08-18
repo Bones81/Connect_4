@@ -1,0 +1,99 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {  
+  background: url(./connect4kids.jpeg);
+  background-size: cover;
+}
+
+h1, h3, .victory {
+  margin: 0.25em auto;
+  width: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(45deg, whitesmoke, lightblue, whitesmoke);
+  border: 1px solid lightblue;
+  box-shadow: lightblue 2px 2px 5px,
+  lightblue -2px -2px 5px;
+  border-radius: 10px;
+  padding: 0.5em;
+  font-variant: small-caps;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+#player-display {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 0.5em;
+}
+
+#current-player {
+  font-size: 2.5em;
+  border-radius: 10px;
+}
+
+.player-one {
+  background-color: red;
+}
+
+.player-two {
+  background-color: blue;
+}
+
+#grid {
+  height: fit-content;
+  width: fit-content;
+  margin: 1em auto;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 0.25em;
+  border: 1px solid lightsteelblue;
+  border-radius: 5px;
+  background-color: lightsteelblue;
+  box-shadow: lightsteelblue 2px 2px 2px,
+    lightsteelblue -2px -2px 2px;
+}
+
+#grid div {
+  height: 50px;
+  width: 50px;
+  border: 1px solid lightsteelblue;
+  border-radius: 100%;
+}
+
+.playable {
+  background-color: white;
+}
+
+.playable:hover {
+  opacity: 60%;
+}
+
+.bottom {
+  display: none;
+}
+
+.unavailable, .chosen {
+  cursor: default;
+  pointer-events: none;
+}
+
+.victory {
+  color: goldenrod;
+}
+
+.hide {
+  display: none;
+}
+
